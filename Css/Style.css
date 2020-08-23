@@ -4,6 +4,12 @@ body {
     width: 100%;
 }
 
+.Head {
+    background-image: url(../Img/slider-background.jpeg);
+    background-size: cover;
+}
+
+
 
 .header {
     height: 100px;
@@ -28,8 +34,8 @@ body {
 }
 
 .Home {
-    background-image: url(../Img/slider-background.jpeg);
-    background-size: cover;
+    
+    
     height: 670px;
     border-top: 3px solid aqua;
     
