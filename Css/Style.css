@@ -1,0 +1,305 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+
+.header {
+    height: 100px;
+    
+}
+
+.header img {
+    height: 150px;
+    width: 190px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -10px;
+}
+
+.header .header-title {
+    float: right;
+    padding: 10px;
+    margin: 25px;
+    font-size: 36pt;
+    font-family: Arial, Helvetica,  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.Home {
+    background-image: url(../Img/slider-background.jpeg);
+    background-size: cover;
+    height: 670px;
+    border-top: 3px solid aqua;
+    
+}
+
+.Home-content {
+    
+    margin-top: 10%;
+    text-align: center;
+}
+
+.Home .Home-Title1 {
+    color: #ffffff;
+    font-size: 76pt;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+
+.Home-Title1 span {
+    color: rgb(255, 61, 61);
+}
+
+
+button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(237, 20, 91);
+    font-size: 15pt;
+}
+
+.Home #Btn2 {
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+} 
+
+button:hover {
+    box-shadow:0px 0px 20px #ffffff;
+}
+
+
+
+
+.html-container {
+    margin: 10px;
+    padding: 10px;
+    
+    height: 330px;
+}
+
+.html-container .html-logo img{
+  height: 200px;
+  width: 200px;
+}
+
+.html-container .html-logo {
+    width: 40%;
+    float: left;
+    margin-left:25px ;
+    margin-top: 25px;
+}
+
+
+.html-container .html-logo p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40pt;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.html-container .html-info {
+    width: 50%;
+    float: left;
+    margin-top: 0px;
+} 
+
+
+.html-container .html-info button {
+    float: right;
+    margin-top: 30px;
+}
+
+.html-container .html-info p {
+    font-size: 27pt;
+    padding-left: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 600px;
+}
+
+
+.html-container .html-info button:hover {
+    box-shadow:0px 0px 20px #000000;
+}
+
+
+
+.Css3-container {
+    padding: 10px;
+    background-color: rgb(222, 227, 224);
+    height: 330px;
+    width: 100%;
+}
+
+.Css3-container .Css3-logo img{
+  height: 200px;
+  width: 150px;
+  margin-left: 40px;
+}
+
+.Css3-container .Css3-logo {
+    width: 40%;
+    float: left;
+    margin-left:25px ;
+    margin-top: 25px;
+}
+
+
+.Css3-container .Css3-logo p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40pt;
+    margin: 10px;
+    font-weight: bolder;
+    margin-left: 39px;
+}
+
+.Css3-container .Css3-info {
+    width: 50%;
+    float: left;
+    margin-top: 0px;
+} 
+
+
+.Css3-container .Css3-info button {
+    float: right;
+    margin-top: 30px;
+}
+
+.Css3-container .Css3-info p {
+    font-size: 20pt;
+    padding-left: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 600px;
+}
+
+
+.Css3-container .Css3-info button:hover {
+    box-shadow:0px 0px 20px #000000;
+}
+
+
+.js-container {
+    padding: 10px;
+    height: 330px;
+}
+
+.js-container .js-logo img{
+  height: 200px;
+  width: 200px;
+}
+
+.js-container .js-logo {
+    width: 40%;
+    float: left;
+    margin-left:45px ;
+    margin-top: 25px;
+}
+
+
+.js-container .js-logo p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40pt;
+    margin: 10px;
+    font-weight: bolder;
+    margin-left: 70px;
+}
+
+.js-container .js-info {
+    width: 50%;
+    float: left;
+    margin-top: 0px;
+} 
+
+
+.js-container .js-info button {
+    float: right;
+    margin-top: 30px;
+}
+
+.js-container .js-info p {
+    font-size: 22pt;
+    padding-left: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 600px;
+}
+
+
+.js-container .js-info button:hover {
+    box-shadow:0px 0px 20px #000000;
+}
+
+
+/* Thanks */
+.thanks {
+    background-color: #111;
+    height: 420px;
+    bottom: 0;
+
+    width: 100%;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+}
+.thanks-content {
+    margin-top: 30px;
+}
+
+.thanks-title img {
+    height: 300px;
+    width: 400px;
+    margin-top: 30px;
+    margin-bottom: -310px;
+}
+
+.thanks-title {
+    padding: 10px;
+    margin-bottom: -00;
+    margin-top: -70px;
+}
+
+.btn-thanks {
+    height: 60px;
+    width: 60px;
+    background-color: #555fff;
+    cursor: pointer;
+    display: block;
+    border-radius: 8px;
+    margin-top: 250px;
+    margin-bottom: 10px;
+}
+
+.thanks i {
+    color: #fff;
+    text-align: center;
+    padding-top: 7px;
+    
+}
+
+.final {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    
+}
+
+#K {
+    width: 60px;
+    float: right;
+    display: none;
+}
