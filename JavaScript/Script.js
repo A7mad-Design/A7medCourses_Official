@@ -1,25 +1,20 @@
 // Main Variables
-let theInput = document.querySelector('.get-repos input');
-let getButton = document.querySelector('.get-button');
-let reposData = document.querySelector('show-data');
-
+let theInput = document.querySelector(".get-repos input");
+let getButton = document.querySelector(".get-button");
+let reposData = document.querySelector(".show-data");
 
 getButton.onclick = function () {
-    getRepos();
-  };
+  getRepos();
+};
 
-  // Get Repos Function
+// Get Repos Function
 function getRepos() {
 
-if (theInput.value == "")
-{
-    swal("Please Enter Your Github Username!");
+  if (theInput.value == "") { // If Value Is Empty
 
+    reposData.innerHTML = "<span>Please Write Github Username.</span>";
 
-} 
-
-else
-{
+  } else {
 
     fetch(`https://api.github.com/users/${theInput.value}/repos`)
 
@@ -27,60 +22,61 @@ else
 
     .then((repositories) => {
 
-       
+      // Empty The Container
+      reposData.innerHTML = '';
 
-        //Loop on Repos
-        repositories.forEach(repo => {
-            
-            //Create Main DIV
-            let mainDiv = document.createElement('div');
+      // Loop On Repositories
+      repositories.forEach(repo => {
 
-            //Create Repo Name 
-            let repoName = document.createTextNode(repo.name);
+        // Create The Main Div Element
+        let mainDiv = document.createElement("div");
 
-            //Append repo to Main Div 
-            mainDiv.appendChild(repoName);
+        // Create Repo Name Text
+        let repoName = document.createTextNode(repo.name);
 
-            //Create URL a 
-            let theUrl = document.createElement('a');
+        // Append The Text To Main Div
+        mainDiv.appendChild(repoName);
 
-            //Create theUrl Text 
-            let theUrlText = document.createTextNode("Visit");
+        // Create Repo URL Anchor
+        let theUrl = document.createElement('a');
 
-            //Append Text To theUrl
-            theUrl.appendChild(theUrlText);
+        // Create Repo Url Text
+        let theUrlText = document.createTextNode("Visit");
 
-            //add href
-            theUrl.href = `https://github.com/${theInput.value}/${repo.name}`;
+        // Append The Repo Url Text To Anchor Tag
+        theUrl.appendChild(theUrlText);
 
-            // Set Attribute Blank
-            theUrl.setAttribute('target', '_blank');
+        // Add The Hypertext Reference "href"
+        theUrl.href = `https://github.com/${theInput.value}/${repo.name}`;
 
-            //Apppend theUrl to Main div
-            mainDiv.appendChild(theUrl);
+        // Set Attribute Blank
+        theUrl.setAttribute('target', '_blank');
 
-            //Create Stars Span 
-            let Stars = document.createElement("span");
-            //Create Stars Text
-            let starsText = document.createTextNode(`Stars ${repo.stargazers_count}`);
+        // Append Url Anchor To Main Div
+        mainDiv.appendChild(theUrl);
 
-            //Append starsText To Stars Span 
-            Stars.appendChild(starsText);
+        // Create Stars Count Span
+        let starsSpan = document.createElement("span");
 
-            //Add Stars To Main Div
-            mainDiv.appendChild(Stars);
+        // Create The Stars Count Text
+        let starsText = document.createTextNode(`Stars ${repo.stargazers_count}`);
 
-            //Add Class On mainDiv
-            mainDiv.className = 'repo-box';
+        // Add Stars Count Text To Stars Span
+        starsSpan.appendChild(starsText);
 
-            //Append mainDiv To The container
-            reposData.appendChild(mainDiv);
+        // Append Stars Count Span To Main Div
+        mainDiv.appendChild(starsSpan);
 
-        });
+        // Add Class On Main Div
+        mainDiv.className = 'repo-box';
+
+        // Append The Main Div To Container
+        reposData.appendChild(mainDiv);
+
+      });
 
     });
 
+  }
 
-};
-
-};
+}
